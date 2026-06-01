@@ -9,7 +9,7 @@ python greet.py "Sho"
 # => Hello, Sho!
 ```
 
-If you don't pass a name, it greats the whole world:
+If you don't pass a name, it greets the whole world:
 
 ```bash
 python greet.py
