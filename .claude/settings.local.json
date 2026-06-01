@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); $gh = Get-Command gh -ErrorAction SilentlyContinue; if \\($gh\\) { \"gh found: $\\($gh.Source\\)\"; gh --version } else { \"gh STILL not found in PATH\" })",
-      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); gh auth status 2>&1)",
-      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); $id = gh api user --jq '.id'; $login = gh api user --jq '.login'; \"$id $login\")"
-    ]
-  }
-}
